@@ -1,0 +1,14 @@
+version: "2"
+services:
+  emqx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "1883:1883"
+      - "8083:8083"
+      - "8084:8084"
+      - "18083:18083"
+    volumes:
+      - "./conf-emqx-plugins:/opt/emqx/etc/plugins"
+ 
