@@ -10,6 +10,7 @@ services:
       - "8083:8083"
       - "8084:8084"
       - "18083:18083"
+      - "18084:18084"
     volumes:
       - "./conf-emqx-plugins:/opt/emqx/etc/plugins"
  
