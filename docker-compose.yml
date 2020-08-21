@@ -2,7 +2,7 @@
 version: "2"
 services:
   emqx:
-    image: emqx/emqx
+    image: emqx/emqx:v4.0.0
     container_name: emqx
     restart: always
     ports:
